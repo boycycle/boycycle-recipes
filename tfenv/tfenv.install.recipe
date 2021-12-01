@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>Installs the latest tfenv from GitHub</string>
+	<key>Identifier</key>
+	<string>com.github.boycycle-recipes.install.tfenv</string>
+	<key>Input</key>
+	<dict>
+		<key>NAME</key>
+		<string>tfenv</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>0.5.0</string>
+	<key>ParentRecipe</key>
+	<string>com.github.boycycle-recipes.tfenv.download</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>items_to_copy</key>
+				<array>
+					<dict>
+						<key>source_item</key>
+						<string>%RECIPE_CACHE_DIR%/%NAME%</string>
+						<key>destination_path</key>
+						<string>/usr/local/</string>
+					</dict>
+				</array>
+			</dict>
+			<key>Processor</key>
+			<string>Installer</string>
+			<key>Processor</key>
+			<string>Symlinker</string>
+			<dict>
+				<key>source_path</key>
+				<string>/usr/local/tfenv/bin/</string>
+				<key>destination_path</key>
+				<string>/usr/local/bin/</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

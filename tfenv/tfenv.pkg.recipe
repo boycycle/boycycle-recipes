@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>Downloads the current release of tfutils/tfenvfrom Github
+	<string>Downloads the current release of tfutils/tfenv from Github
 		and builds a package installing it to /usr/local.</string>
 	<key>Identifier</key>
 	<string>com.github.boycycle-recipes.tfenv.pkg</string>
