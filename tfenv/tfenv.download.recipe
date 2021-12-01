@@ -5,7 +5,7 @@
 	<key>Description</key>
 	<string>Downloads latest version of tfenv.</string>
 	<key>Identifier</key>
-	<string>com.github.boycycle-recipes.atfenc.download</string>
+	<string>com.github.boycycle-recipes.tfenv.download</string>
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
